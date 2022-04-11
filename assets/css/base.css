@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@font-face {
+    font-family: 'Beyond';
+    src: url(../fonts/beyond_the_mountains.ttf) format('truetype'), url(../fonts/beyond_the_mountains1.otf) format('opentype')
+}
+
+ :root {
+    --primary-color: #fa9e1b;
+    --white-color: #fff;
+    --violet: #8d4fff;
+    --yellow: #fa9e1b;
+    --black: #2d2c2c;
+    --btn-black: #31124b;
+    --bg-header: rgba(54, 19, 84, .6);
+    --bg-header-scroll: rgba(54, 19, 84, .85);
+    --bg-btn: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    --bg-section: linear-gradient(to right, #fa9e1b, #8d4fff);
+    --offer-color: #eda84a;
+    --border: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #fff;
+    color: #a5a5a5;
+    overflow-x: hidden;
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50%)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.header {
+    transition: all .9s ease-in-out;
+}
+
+.header .scroll {
+    background: rgba(54, 19, 84, .85);
+    height: 110px;
+    position: fixed;
+    z-index: 99;
+    animation: toTop 1s ease forwards;
+}
+
+@keyframes toTop {
+    from {
+        height: 135px;
+    }
+    to {
+        height: 110px;
+    }
+}
+
+.header .scroll .header__nav-container {
+    padding: 28px 0;
+}
+
+.header .scroll .header__nav-container--search input {
+    transform: translateY(60%);
+}
+
+::placeholder {
+    color: #888;
+}
