@@ -5,6 +5,10 @@
 
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
+    .tour .grid.wide {
+    min-width: unset;
+    }
+    
     .header__nav-container--list {
         display: none;
     }
