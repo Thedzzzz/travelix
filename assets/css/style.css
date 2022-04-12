@@ -471,6 +471,10 @@
 
 /* Tours */
 
+.tour .grid.wide {
+    min-width: -webkit-fill-available;
+}
+
 .tour__container {
     margin: 80px;
 }
